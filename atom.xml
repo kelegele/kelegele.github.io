@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.kelegele.com</id>
-    <title>kelegele</title>
-    <updated>2019-07-28T07:28:44.834Z</updated>
+    <title>可了个乐</title>
+    <updated>2019-07-28T07:35:38.835Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.kelegele.com"/>
     <link rel="self" href="https://blog.kelegele.com/atom.xml"/>
     <subtitle>关于学习与心得</subtitle>
     <logo>https://blog.kelegele.com/images/avatar.png</logo>
     <icon>https://blog.kelegele.com/favicon.ico</icon>
-    <rights>All rights reserved 2019, kelegele</rights>
+    <rights>All rights reserved 2019, 可了个乐</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://blog.kelegele.com/post/hello-gridea</id>
