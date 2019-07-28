@@ -763,13 +763,13 @@ a {
   z-index: 99;
   top: -135px;
   right: -28px;
-  width: 7.5rem;
+  width: 8.5rem;
   max-width: none;
-  height: 7.5rem;
+  height: 8.5rem;
   transform: scale(0);
   transform-origin: top right;
   opacity: 0;
-  border: 0.3125rem solid #0085ba;
+  border: 0.3125rem solid #dee2e6;
   border-radius: 0.25rem;
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
