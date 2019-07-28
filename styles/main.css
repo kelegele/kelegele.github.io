@@ -755,30 +755,27 @@ a {
 .social-container a.weixin {
   position: relative;
 }
-.social-container a.weixin .qrcode {
-  display: none;
-}
 .social-container .weixin img.qrcode {
   position: absolute;
+  padding: 1rem;
   z-index: 99;
   top: -135px;
   right: -28px;
-  width: 8.5rem;
+  width: 9rem;
   max-width: none;
-  height: 8.5rem;
+  height: 9rem;
   transform: scale(0);
-  transform-origin: bottom right;
+  transform-origin: right;
   opacity: 0;
-  border: 0.3125rem solid #ffffff;
+  border: 0.3125rem hidden #ffffff;
   border-radius: 0.25rem;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .social-container .weixin:hover img.qrcode {
   transform: scale(1);
   opacity: 1;
-  display: inline;
 }
 
       .post-item .right .feature-container {
