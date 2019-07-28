@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kelegele.github.io/blog/</id>
+    <id>https://kelegele.github.io/</id>
     <title>kelegele</title>
-    <updated>2019-07-28T06:34:17.865Z</updated>
+    <updated>2019-07-28T06:50:47.685Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kelegele.github.io/blog/"/>
-    <link rel="self" href="https://kelegele.github.io/blog//atom.xml"/>
+    <link rel="alternate" href="https://kelegele.github.io/"/>
+    <link rel="self" href="https://kelegele.github.io//atom.xml"/>
     <subtitle>关于学习与心得</subtitle>
-    <logo>https://kelegele.github.io/blog//images/avatar.png</logo>
-    <icon>https://kelegele.github.io/blog//favicon.ico</icon>
+    <logo>https://kelegele.github.io//images/avatar.png</logo>
+    <icon>https://kelegele.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, kelegele</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://kelegele.github.io/blog//post/hello-gridea</id>
-        <link href="https://kelegele.github.io/blog//post/hello-gridea">
+        <id>https://kelegele.github.io//post/hello-gridea</id>
+        <link href="https://kelegele.github.io//post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
