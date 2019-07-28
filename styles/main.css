@@ -755,6 +755,9 @@ a {
 .social-container a.weixin {
   position: relative;
 }
+.social-container a.weixin .qrcode {
+  display: none;
+}
 .social-container .weixin img.qrcode {
   position: absolute;
   z-index: 99;
@@ -775,6 +778,7 @@ a {
 .social-container .weixin:hover img.qrcode {
   transform: scale(1);
   opacity: 1;
+  display: inline;
 }
 
       .post-item .right .feature-container {
