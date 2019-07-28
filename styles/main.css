@@ -752,6 +752,30 @@ a {
   font-size: 16px;
   margin: 4px 8px;
 }
+.social-container a.weixin {
+  position: relative;
+}
+.social-container .weixin img.qrcode {
+  position: absolute;
+  z-index: 99;
+  top: -135px;
+  right: -28px;
+  width: 7.5rem;
+  max-width: none;
+  height: 7.5rem;
+  transform: scale(0);
+  transform-origin: top right;
+  opacity: 0;
+  border: 0.3125rem solid #0085ba;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.social-container .weixin:hover img.qrcode {
+  transform: scale(1);
+  opacity: 1;
+}
 
       .post-item .right .feature-container {
         border-radius: 5px;
