@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kelegele.com</id>
     <title>可了个乐</title>
-    <updated>2019-08-05T06:39:28.037Z</updated>
+    <updated>2019-08-05T07:42:14.903Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kelegele.com"/>
     <link rel="self" href="https://kelegele.com/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://kelegele.com/images/avatar.png</logo>
     <icon>https://kelegele.com/favicon.ico</icon>
     <rights>All rights reserved 2019, 可了个乐</rights>
+    <entry>
+        <title type="html"><![CDATA[常用正则表达式]]></title>
+        <id>https://kelegele.com/post/common_RegExr</id>
+        <link href="https://kelegele.com/post/common_RegExr">
+        </link>
+        <updated>2019-08-05T07:05:48.000Z</updated>
+        <content type="html"><![CDATA[<p>[1].<a href="https://github.com/cdoco/common-regex">菜鸟教程</a><br>
+[2].<a href="https://c.runoob.com/front-end/854">GitHub:cdoco</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[正则表达式（Regular Expression）]]></title>
         <id>https://kelegele.com/post/Regular_Expressions</id>
