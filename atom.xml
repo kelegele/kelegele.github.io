@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kelegele.com</id>
     <title>可了个乐</title>
-    <updated>2019-08-16T15:06:42.384Z</updated>
+    <updated>2019-08-16T15:08:54.692Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kelegele.com"/>
     <link rel="self" href="https://kelegele.com/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://kelegele.com/post/gitbook_start">
         </link>
         <updated>2019-08-16T07:36:02.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="1-gitbook是什么">1 Gitbook是什么</h1>
+        <summary type="html"><![CDATA[<p>一个简洁的gitbook搭建教程。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一个简洁的gitbook搭建教程。</p>
+<!-- more -->
+<h1 id="1-gitbook是什么">1 Gitbook是什么</h1>
 <p>GitBook是一个命令行工具（通过使用Node.js），用于使用GitHub / Git通过Markdown（或AsciiDoc）构建文档、页面以及书籍。本文将以构建一本书籍为例进行说明。</p>
 <h1 id="2-开始gitbook">2 开始Gitbook</h1>
 <blockquote>
