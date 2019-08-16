@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://kelegele.com/favicon.ico?v=1565958103875">
+<link rel="shortcut icon" href="https://kelegele.com/favicon.ico?v=1565967997437">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://kelegele.com/styles/main.css">
 
@@ -45,7 +45,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://kelegele.com">
-        <img src="https://kelegele.com/images/avatar.png?v=1565958103875" class="site-logo">
+        <img src="https://kelegele.com/images/avatar.png?v=1565967997437" class="site-logo">
         <h1 class="site-title">可了个乐</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -130,6 +130,9 @@
             <h2 class="post-title">使用 Gitbook 搭建 book page</h2>
             <div class="post-date">2019-08-16</div>
             
+              <div class="feature-container" style="background-image: url('https://kelegele.com/post-images/gitbook_start.png')">
+              </div>
+            
             <div class="post-content">
               <h1 id="1-gitbook是什么">1 Gitbook是什么</h1>
 <p>GitBook是一个命令行工具（通过使用Node.js），用于使用GitHub / Git通过Markdown（或AsciiDoc）构建文档、页面以及书籍。本文将以构建一本书籍为例进行说明。</p>
@@ -147,13 +150,13 @@
 </code></pre>
 <p>使用<code>gitbook ls-remote</code>可罗列出所有可用版本。<br>
 执行后截图：<br>
-<img src="https://kelegele.com/post-images/1565942688064.PNG" alt=""><br>
+<img src="https://kelegele.com/post-images/1565967559383.PNG" alt="image"><br>
 由于npm网络太慢，这里我采用了cnpm的淘宝镜像进行安装。<br>
 安装完成后测试指令：</p>
 <pre><code class="language-bsah">$ gitbook -help
 </code></pre>
 <p>成功截图：<br>
-<img src="https://kelegele.com/post-images/1565942846526.PNG" alt=""></p>
+<img src="https://kelegele.com/post-images/1565967609172.PNG" alt="image"></p>
 <h2 id="22-创建书籍">2.2 创建书籍</h2>
 <p>在创建之前新建我们想要保存这些构建文件的根目录，在该目录下打开命令行，使用初始化命令构建书本：</p>
 <pre><code class="language-bsah">$ gitbook init
@@ -162,31 +165,70 @@
 <pre><code class="language-bash">$ gitbook init ./directory
 </code></pre>
 <p>创建完成后会生成两个文件：<br>
-<img src="https://kelegele.com/post-images/1565943402814.PNG" alt=""><br>
+<img src="https://kelegele.com/post-images/1565967618987.PNG" alt="image"><br>
 README.md 和 SUMMARY.md 是两个必须文件，README.md 是对书籍的简单介绍，SUMMARY.md 是书籍的目录结构。</p>
 <h2 id="23-预览-构建静态页面">2.3 预览、构建静态页面</h2>
 <p>创建完成后可通过以下指令预览：</p>
 <pre><code class="language-bash">$ gitbook serve
 </code></pre>
-<p><img src="https://kelegele.com/post-images/1565943651919.PNG" alt=""><br>
+<p><img src="https://kelegele.com/post-images/1565967633001.PNG" alt="image"><br>
 在浏览器打开<code>http://localhost:4000/</code>即可预览：<br>
-<img src="https://kelegele.com/post-images/1565943789797.PNG" alt=""></p>
+<img src="https://kelegele.com/post-images/1565967641876.PNG" alt="image"></p>
 <p>书籍制作完成后也可以直接构建成静态页面：</p>
 <pre><code class="language-bash">$ gitbook build ./repository --output=./outputFolder
 </code></pre>
 <p>构建完成后将会在目录生成相应的静态页面文件夹。<br>
-<img src="https://kelegele.com/post-images/1565943889567.PNG" alt=""><br>
+<img src="https://kelegele.com/post-images/1565967654017.PNG" alt="image"><br>
 Gitbook 创建了书籍目录结构后，我们就可以向其中添加真正的内容了，文件的编写使用 markdown 语法，在内容修改过程中，每一次保存文件，<code>gitbook serve</code> 都会自动重新编译，所以可以持续通过浏览器来查看最新的书籍效果！</p>
 <p>命令 build 和 serve 的参数为:</p>
-<pre><code class="language-bash">-o, --output &lt;directory&gt;  输出文件件, 默认为 ./_book
--f, --format &lt;name&gt;       产生的书籍的类型, 默认为静态站点, 可用的格式为: site, page, ebook, json
---config &lt;config file&gt;    配置文件, 默认为 book.js 或 book.json
+<pre><code> -o, --output &lt;directory&gt;  #输出文件件, 默认为 ./_book
+ -f, --format &lt;name&gt;       #产生的书籍的类型, 默认为静态站点, 可用的格式为: site, page, ebook, json
+ --config &lt;config file&gt;    #配置文件, 默认为 book.js 或 book.json
 </code></pre>
 <h2 id="24-gitbook-editor编辑器">2.4 GitBook Editor编辑器</h2>
 <p>可以下载 gitbook 编辑器，做到所见即所得的编辑，如下图所示：<br>
-<img src="https://kelegele.com/post-images/1565945009275.png" alt=""><br>
+<img src="https://kelegele.com/post-images/1565967667144.png" alt="image"><br>
 官方网址：<a href="https://legacy.gitbook.com/editor">https://legacy.gitbook.com/editor</a></p>
 <h1 id="3-配置">3 配置</h1>
+<p>Gitbook允许使用灵活的配置自定义书籍，配置选项在<code>book.json</code>或<code>book.js</code>文件中填写，不熟悉JSON语法可以使用JSONlint等工具验证语法。</p>
+<h2 id="31-常规设置">3.1 常规设置</h2>
+<ul>
+<li><code>root</code>	包含所有书籍文件的根文件夹的路径，除外 book.json</li>
+<li><code>structure</code>	指定自述文件，摘要，词汇表等的路径。见3.2结构段落。</li>
+<li><code>title</code>	书籍的标题，默认值是从README中提取的。</li>
+<li><code>description</code>	您的书的描述，默认值是从README中提取的。</li>
+<li><code>author</code>	作者姓名。</li>
+<li><code>isbn</code>	这本书的ISBN。</li>
+<li><code>language</code>	本书语言的ISO语言代码，默认值为en。</li>
+<li><code>direction</code>	文字的方向。可以是rtl或者ltr，默认值取决于值language。</li>
+<li><code>gitbook</code>	应该使用的GitBook版本。使用<a href="http://semver.org/">SemVer</a>规范并接受类似的条件&quot;&gt;= 3.0.0&quot;。</li>
+</ul>
+<h2 id="32-结构段落structure">3.2 结构段落structure</h2>
+<ul>
+<li>structure.readme	自述文件名（默认为README.md）</li>
+<li>structure.summary	摘要文件名（默认为SUMMARY.md）</li>
+<li>structure.glossary	词汇表文件名（默认为GLOSSARY.md）</li>
+<li>structure.languages	语言文件名（默认为LANGS.md）</li>
+</ul>
+<h2 id="33-插件plugins">3.3 插件Plugins</h2>
+<p>插件及其配置在<code>book.json</code>中指定。<br>
+从版本3.0.0开始，GitBook可以使用主题。</p>
+<ul>
+<li>plugins	要加载的插件列表</li>
+<li>pluginsConfig	插件配置</li>
+</ul>
+<h2 id="34-pdf选项">3.4 PDF选项</h2>
+<p>PDF输出可以使用以下选项中的一组选项进行自定义<code>book.json</code>：</p>
+<ul>
+<li>pdf.pageNumbers	将页码添加到每个页面的底部（默认为true）</li>
+<li>pdf.fontSize	基本字体大小（默认为12）</li>
+<li>pdf.fontFamily	基本字体系列（默认为Arial）</li>
+<li>pdf.paperSize	纸张尺寸，选项是'a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'legal', 'letter'（默认是a4）</li>
+<li>pdf.margin.top	上边距（默认为56）</li>
+<li>pdf.margin.bottom	底部保证金（默认为56）</li>
+<li>pdf.margin.right	右边距（默认为62）</li>
+<li>pdf.margin.left	左边距（默认为62）</li>
+</ul>
 
             </div>
             
