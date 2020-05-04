@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://kelegele.com/favicon.ico?v=1567819760495">
+<link rel="shortcut icon" href="https://kelegele.com/favicon.ico?v=1588609434168">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://kelegele.com/styles/main.css">
 
@@ -45,7 +45,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://kelegele.com">
-        <img src="https://kelegele.com/images/avatar.png?v=1567819760495" class="site-logo">
+        <img src="https://kelegele.com/images/avatar.png?v=1588609434168" class="site-logo">
         <h1 class="site-title">可了个乐</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -152,13 +152,13 @@
 </code></pre>
 <p>使用<code>gitbook ls-remote</code>可罗列出所有可用版本。<br>
 执行后截图：<br>
-<img src="https://kelegele.com/post-images/1565967559383.PNG" alt="image"><br>
+<img src="https://kelegele.com/post-images/1565967559383.PNG" alt="image" loading="lazy"><br>
 由于npm网络太慢，这里我采用了cnpm的淘宝镜像进行安装。<br>
 安装完成后测试指令：</p>
 <pre><code class="language-bsah">$ gitbook -help
 </code></pre>
 <p>成功截图：<br>
-<img src="https://kelegele.com/post-images/1565967609172.PNG" alt="image"></p>
+<img src="https://kelegele.com/post-images/1565967609172.PNG" alt="image" loading="lazy"></p>
 <h2 id="22-创建书籍">2.2 创建书籍</h2>
 <p>在创建之前新建我们想要保存这些构建文件的根目录，在该目录下打开命令行，使用初始化命令构建书本：</p>
 <pre><code class="language-bsah">$ gitbook init
@@ -167,20 +167,20 @@
 <pre><code class="language-bash">$ gitbook init ./directory
 </code></pre>
 <p>创建完成后会生成两个文件：<br>
-<img src="https://kelegele.com/post-images/1565967618987.PNG" alt="image"><br>
+<img src="https://kelegele.com/post-images/1565967618987.PNG" alt="image" loading="lazy"><br>
 README.md 和 SUMMARY.md 是两个必须文件，README.md 是对书籍的简单介绍，SUMMARY.md 是书籍的目录结构。</p>
 <h2 id="23-预览-构建静态页面">2.3 预览、构建静态页面</h2>
 <p>创建完成后可通过以下指令预览：</p>
 <pre><code class="language-bash">$ gitbook serve
 </code></pre>
-<p><img src="https://kelegele.com/post-images/1565967633001.PNG" alt="image"><br>
+<p><img src="https://kelegele.com/post-images/1565967633001.PNG" alt="image" loading="lazy"><br>
 在浏览器打开<code>http://localhost:4000/</code>即可预览：<br>
-<img src="https://kelegele.com/post-images/1565967641876.PNG" alt="image"></p>
+<img src="https://kelegele.com/post-images/1565967641876.PNG" alt="image" loading="lazy"></p>
 <p>书籍制作完成后也可以直接构建成静态页面：</p>
 <pre><code class="language-bash">$ gitbook build ./repository --output=./outputFolder
 </code></pre>
 <p>构建完成后将会在目录生成相应的静态页面文件夹。<br>
-<img src="https://kelegele.com/post-images/1565967654017.PNG" alt="image"><br>
+<img src="https://kelegele.com/post-images/1565967654017.PNG" alt="image" loading="lazy"><br>
 Gitbook 创建了书籍目录结构后，我们就可以向其中添加真正的内容了，文件的编写使用 markdown 语法，在内容修改过程中，每一次保存文件，<code>gitbook serve</code> 都会自动重新编译，所以可以持续通过浏览器来查看最新的书籍效果！</p>
 <p>命令 build 和 serve 的参数为:</p>
 <pre><code> -o, --output &lt;directory&gt;  #输出文件件, 默认为 ./_book
@@ -189,7 +189,7 @@ Gitbook 创建了书籍目录结构后，我们就可以向其中添加真正的
 </code></pre>
 <h2 id="24-gitbook-editor编辑器">2.4 GitBook Editor编辑器</h2>
 <p>可以下载 gitbook 编辑器，做到所见即所得的编辑，如下图所示：<br>
-<img src="https://kelegele.com/post-images/1565967667144.png" alt="image"><br>
+<img src="https://kelegele.com/post-images/1565967667144.png" alt="image" loading="lazy"><br>
 官方网址：<a href="https://legacy.gitbook.com/editor">https://legacy.gitbook.com/editor</a></p>
 <h1 id="3-配置">3 配置</h1>
 <p>Gitbook允许使用灵活的配置自定义书籍，配置选项在<code>book.json</code>或<code>book.js</code>文件中填写，不熟悉JSON语法可以使用JSONlint等工具验证语法。</p>
@@ -236,15 +236,15 @@ Gitbook 创建了书籍目录结构后，我们就可以向其中添加真正的
             
               <div class="tag-container">
                 
-                  <a href="https://kelegele.com/tag/WJC0WFOml" class="tag">
+                  <a href="https://kelegele.com/tag/WJC0WFOml/" class="tag">
                     gitbook
                   </a>
                 
-                  <a href="https://kelegele.com/tag/qSiggkBPTz" class="tag">
+                  <a href="https://kelegele.com/tag/qSiggkBPTz/" class="tag">
                     git
                   </a>
                 
-                  <a href="https://kelegele.com/tag/gbz6GSHjdO" class="tag">
+                  <a href="https://kelegele.com/tag/gbz6GSHjdO/" class="tag">
                     github
                   </a>
                 
@@ -253,7 +253,7 @@ Gitbook 创建了书籍目录结构后，我们就可以向其中添加真正的
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://kelegele.com/post/common_RegExr">
+                <a href="https://kelegele.com/post/common_RegExr/">
                   <h3 class="post-title">
                     常用正则表达式
                   </h3>
